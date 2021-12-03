@@ -16,7 +16,7 @@ def gen_frames(index):  # generate frame by frame from camera
     camera.set(4, 720)
     start_time = time.time()
     print(start_time)
-    print(time.cime(start_time))
+    print(time.ctime(start_time))
     while True:
         # Capture frame-by-frame
         success, frame = camera.read()  # read the camera frame
