@@ -10,6 +10,7 @@ Currently code only works with 4 cameras, no more or less.
 Each camera ID has to be found beforehand and edited in the code. 
 Unplugging/disabling camera during the code running will cause code to crash
 Framerate of stream depends on resolution of each frame set and USB bandwidth. Recommended for highest framerate of approx. 15fps is 640X320 per camera creating a 1280X720 video feed when all 4 cameras are stitched together.
+Code here is also used in my other repo, https://github.com/ProjectHydroTech/Pynq-Frontend
 
 ###### How it works:
 Camera frames from each of the 4 cameras are captured using OpenCV while multithreaded. Each frame is then stitched together as numpy array into 1 singular frame which is then passed on to the Flask app to be shown as a HTML stream
