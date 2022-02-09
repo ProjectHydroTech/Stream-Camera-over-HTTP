@@ -17,9 +17,9 @@ Code here is also used in my other repo: https://github.com/ProjectHydroTech/Pyn
 Camera frames from each of the 4 cameras are captured using OpenCV while multithreaded. Each frame is then stitched together as numpy array into 1 singular frame which is then passed on to the Flask app to be shown as a HTML stream
 
 ## How To Use:
-Navigate to directory before /multiplecamera and run
+Navigate to directory and run
 ```
-set FLASK_APP=multiplecamera
+set FLASK_APP=camera.py
 flask run
 ```
 Then in any web browser navigate to HOSTIP:5000 to view stream
